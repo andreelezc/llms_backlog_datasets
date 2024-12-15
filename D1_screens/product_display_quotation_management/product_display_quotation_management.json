@@ -1,0 +1,99 @@
+{
+  "functionality": {
+    "name": "Product Display and Quotation Management",
+    "description": "Features to display products, provide sorting and filtering options, and allow users to request quotations for products.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must display a list of products within a selected category with information such as product image, name, and price." },
+    { "code": "FR#2", "description": "The system must show the original price, discounted price, and a percentage discount badge for products on sale." },
+    { "code": "FR#3", "description": "The system must indicate financing availability for applicable products with a 'Financing available' label." },
+    { "code": "FR#4", "description": "The system must display loyalty points that can be earned with each product purchase, e.g., 'Earn 1250 AgroPontos.'" },
+    { "code": "FR#5", "description": "The system must provide sorting options (e.g., 'Lowest Price,' 'Highest Price,' 'Best Rating') to dynamically update the product list." },
+    { "code": "FR#6", "description": "Users must be able to favorite or save products by clicking a heart icon on the product card, which changes state when saved." },
+    { "code": "FR#7", "description": "The system must allow users to apply multiple filters, including categories, official store names, ratings, locations, and price ranges." },
+    { "code": "FR#8", "description": "The system must provide a toggle button to filter products offering free shipping." },
+    { "code": "FR#9", "description": "The system must include a filter for 'Official Stores,' allowing users to select one or more stores from a list, with an expandable 'See more' option." },
+    { "code": "FR#10", "description": "The system must offer a rating filter for products, allowing selection from 1 to 5 stars." },
+    { "code": "FR#11", "description": "The system must provide a location filter to narrow down products based on a selected city or state." },
+    { "code": "FR#12", "description": "The system must include a price filter with predefined ranges and a custom range option where users can specify minimum and maximum values." },
+    { "code": "FR#13", "description": "Users must be able to view and remove currently selected filters, displayed at the top of the filter panel, with an 'X' button for each filter." },
+    { "code": "FR#14", "description": "The system must include an 'Apply' button to apply selected filters and dynamically update the product list, and a 'Close' button to exit the filter panel without applying changes." },
+    { "code": "FR#15", "description": "The system must provide a text input field labeled 'Description' where users can enter up to 400 characters about their requirements for a quotation." },
+    { "code": "FR#16", "description": "The system must display an informational message guiding users to provide detailed information for an accurate quotation." },
+    { "code": "FR#17", "description": "The system must include a 'Request Quote' button to submit the quotation request to the seller for review." },
+    { "code": "FR#18", "description": "The system must provide a 'Cancel' button to allow users to exit the quotation process without submitting any information." },
+    { "code": "FR#19", "description": "The system must validate the description input to ensure it is not empty and provide feedback if the field is incomplete." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Display products with details such as price, discounts, and financing options.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to view products in a selected category with image, name, and price.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Implement the UI to show product image, name, and price." },
+            { "code": "E#1 US#1 T#2", "description": "Create API endpoints to retrieve products based on selected category." },
+            { "code": "E#1 US#1 T#3", "description": "Implement logic to show original price, discounted price, and percentage discount badge." },
+            { "code": "E#1 US#1 T#4", "description": "Add a 'Financing available' label to products that offer financing." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Allow users to sort and filter products by various criteria.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to apply filters for categories, ratings, location, price, etc.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Design the filter panel UI with options like categories, stores, ratings, etc." },
+            { "code": "E#2 US#1 T#2", "description": "Develop the logic to apply and combine multiple filters dynamically." },
+            { "code": "E#2 US#1 T#3", "description": "Display active filters at the top of the filter panel with an 'X' button for removal." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As a user, I want to sort products by price or rating.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Design the sorting options (Lowest Price, Highest Price, Best Rating)." },
+            { "code": "E#2 US#2 T#2", "description": "Develop logic to sort products based on selected criteria." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Enable users to favorite and save products for future reference.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want to save products by clicking a heart icon.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Include a heart icon on each product card for favoriting." },
+            { "code": "E#3 US#1 T#2", "description": "Toggle the state of the heart icon when a product is favorited or unfavorited." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Allow users to request quotations for products by providing details.",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As a user, I want to enter a description and request a quotation for a product.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Implement a text input field for the user to enter a description (up to 400 characters)." },
+            { "code": "E#4 US#1 T#2", "description": "Ensure the description is not empty and provide feedback if necessary." },
+            { "code": "E#4 US#1 T#3", "description": "Add a 'Request Quote' button to submit the quotation request to the seller." },
+            { "code": "E#4 US#1 T#4", "description": "Add a 'Cancel' button to exit the quotation process without submitting." }
+          ]
+        }
+      ]
+    }
+  ]
+}
