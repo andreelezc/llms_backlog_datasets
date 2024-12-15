@@ -1,0 +1,89 @@
+{
+  "functionality": {
+    "name": "Admin Menu Management",
+    "description": "A feature to manage weekly menus for users, view summaries, export data, and customize menu views.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must allow administrators to view and edit the weekly menu for each user, including the type of dish assigned for each day." },
+    { "code": "FR#2", "description": "The system must provide a detailed overview of menu assignments by company, user, and type of dish." },
+    { "code": "FR#3", "description": "The system must enable the export of menu information as a PDF." },
+    { "code": "FR#4", "description": "The system must display summary statistics of the number of dishes by type and day for quick analysis." },
+    { "code": "FR#5", "description": "The system must allow filtering by company and detailed view options (e.g., per person or totals)." },
+    { "code": "FR#6", "description": "The system must enable adding new entries for menu assignments." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Manage user-specific weekly menus.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As an administrator, I want to assign menu items to users for each day of the week so that everyone’s preferences are accommodated.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design the UI to assign menu items for each user per day." },
+            { "code": "E#1 US#1 T#2", "description": "Implement functionality to save menu assignments to the backend." }
+          ]
+        },
+        {
+          "code": "E#1 US#2",
+          "description": "As an administrator, I want to edit existing menu assignments for users to handle changes in preferences or errors.",
+          "tasks": [
+            { "code": "E#1 US#2 T#1", "description": "Create an edit menu UI to modify existing assignments." },
+            { "code": "E#1 US#2 T#2", "description": "Add API logic to update menu assignments dynamically." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Provide summary views for menu statistics.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As an administrator, I want to view a summary of the number of dishes by type and day to monitor demand and trends.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Design the UI for displaying dish counts by type and day." },
+            { "code": "E#2 US#1 T#2", "description": "Implement backend calculations for dish count summaries." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As an administrator, I want to filter the menu summary by company to analyze data for specific teams.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Add filters to the summary view for selecting specific companies." },
+            { "code": "E#2 US#2 T#2", "description": "Ensure the filtered data is displayed dynamically in the summary." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Allow export and sharing of menu data.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As an administrator, I want to export the menu details to a PDF to share it with others easily.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Add a button to export menu data to PDF format." },
+            { "code": "E#3 US#1 T#2", "description": "Implement backend logic for generating PDF files." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Enable filtering and customization of menu details.",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As an administrator, I want to filter the menu view by individual users or totals for easier navigation and reporting.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Create filters for switching between per-person and total menu views." },
+            { "code": "E#4 US#1 T#2", "description": "Implement logic to update menu details dynamically based on filter selections." }
+          ]
+        }
+      ]
+    }
+  ]
+}
