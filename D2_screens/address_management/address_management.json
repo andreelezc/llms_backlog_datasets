@@ -1,0 +1,97 @@
+{
+  "functionality": {
+    "name": "Address Management",
+    "description": "Features allowing users to manage addresses and company-related details.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must let users add a new address with basic details like name, state, city, street, etc. There should also be optional fields for additional info like apartment number or notes." },
+    { "code": "FR#2", "description": "The system must allow users to set an address as the default for their purchases or sales." },
+    { "code": "FR#3", "description": "The system must allow the user to edit an existing address." },
+    { "code": "FR#4", "description": "The system must allow the user to delete an address." },
+    { "code": "FR#5", "description": "The system must display a list of saved addresses." },
+    { "code": "FR#6", "description": "The system must provide an option to add annual income information for the company in a dedicated section." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Enable users to manage their addresses.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to add a new address.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design the UI for the add address form with all required fields." },
+            { "code": "E#1 US#1 T#2", "description": "Implement form validation for mandatory fields like name, postal code, and phone number." },
+            { "code": "E#1 US#1 T#3", "description": "Create API endpoint to save new addresses to the database." },
+            { "code": "E#1 US#1 T#4", "description": "Connect the form to the API and handle success/error responses." }
+          ]
+        },
+        {
+          "code": "E#1 US#2",
+          "description": "As a user, I want to edit an address.",
+          "tasks": [
+            { "code": "E#1 US#2 T#1", "description": "Design the UI for editing an existing address." },
+            { "code": "E#1 US#2 T#2", "description": "Fetch existing address details and prefill the form." },
+            { "code": "E#1 US#2 T#3", "description": "Implement form validation for editable fields." },
+            { "code": "E#1 US#2 T#4", "description": "Create API endpoint to update address details." },
+            { "code": "E#1 US#2 T#5", "description": "Connect the form to the API and handle success/error responses." }
+          ]
+        },
+        {
+          "code": "E#1 US#3",
+          "description": "As a user, I want to delete an address.",
+          "tasks": [
+            { "code": "E#1 US#3 T#1", "description": "Add a delete button for each saved address in the list." },
+            { "code": "E#1 US#3 T#2", "description": "Create API endpoint to delete addresses." },
+            { "code": "E#1 US#3 T#3", "description": "Remove the address from the UI after successful deletion." }
+          ]
+        },
+        {
+          "code": "E#1 US#4",
+          "description": "As a user, I want to set an address as the default so that it is automatically used for my purchases or sales.",
+          "tasks": [
+            { "code": "E#1 US#4 T#1", "description": "Highlight the default address visually in the UI." },
+            { "code": "E#1 US#4 T#2", "description": "Create API endpoint to update the default address setting." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Provide an overview of saved addresses.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to view a list of my saved addresses to manage them.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Design the UI to display a list of saved addresses." },
+            { "code": "E#2 US#1 T#2", "description": "Fetch all saved addresses from the database via an API." },
+            { "code": "E#2 US#1 T#3", "description": "Render the list of addresses in the UI, categorized by default and others." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As a user, I want to see which address is set as the default.",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Allow input of company details.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want to input my company’s annual income so that I can keep administrative records up to date.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Design the UI for entering annual income information." },
+            { "code": "E#3 US#1 T#2", "description": "Implement form validation to ensure only valid numeric inputs are accepted." },
+            { "code": "E#3 US#1 T#3", "description": "Create API endpoint to save annual income details to the database." },
+            { "code": "E#3 US#1 T#4", "description": "Connect the form to the API and handle success/error responses." }
+          ]
+        }
+      ]
+    }
+  ]
+}
