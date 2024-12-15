@@ -1,0 +1,87 @@
+{
+  "functionality": {
+    "name": "Admin New Menu",
+    "description": "A feature for administrators to create and manage weekly menus, customize meals and mark holidays.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must allow administrators to create a new menu for a selected week." },
+    { "code": "FR#2", "description": "The system must provide options to specify dish categories and assign meals for each day." },
+    { "code": "FR#3", "description": "The system must enable marking specific days as holidays, where menu options are not required." },
+    { "code": "FR#4", "description": "The system must allow administrators to enter detailed meal descriptions for each dish type." },
+    { "code": "FR#5", "description": "The system must display a confirmation popup once the menu is saved, showing its availability date for users." },
+    { "code": "FR#6", "description": "The system must provide 'Save' and 'Cancel' buttons to manage the menu creation process." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Enable menu creation for a specific week.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As an administrator, I want to create a menu for a specific week to plan meals in advance.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design the UI for selecting a week and initializing a new menu." },
+            { "code": "E#1 US#1 T#2", "description": "Add backend logic for saving weekly menus." }
+          ]
+        },
+        {
+          "code": "E#1 US#2",
+          "description": "As an administrator, I want to navigate easily between weeks to ensure menu consistency.",
+          "tasks": [
+            { "code": "E#1 US#2 T#1", "description": "Implement navigation controls for moving between weeks." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Provide options to customize and categorize meals.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As an administrator, I want to select dish categories and enter meal options for each type to provide variety.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Add input fields for dish categories and meal descriptions." },
+            { "code": "E#2 US#1 T#2", "description": "Implement logic for adding and removing dish options." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As an administrator, I want to quickly update the menu details for each day of the week to make changes efficiently.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Add editing option to modify daily menu details." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Allow marking holidays in the menu schedule.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As an administrator, I want to mark certain days as holidays so no meals are planned for those days.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Add a checkbox for marking a day as a holiday." },
+            { "code": "E#3 US#1 T#2", "description": "Ensure holiday markers disable input fields for the respective day." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Implement feedback for successful menu creation.",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As an administrator, I want to receive confirmation after saving the menu to verify it was successfully created.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Add backend logic to confirm and display menu availability dates." },
+            { "code": "E#4 US#1 T#2", "description": "Implement frontend feedback for the save and cancel actions." }
+          ]
+        }
+      ]
+    }
+  ]
+}
