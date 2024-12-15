@@ -1,0 +1,95 @@
+{
+  "functionality": {
+    "name": "Postal Code",
+    "description": "A feature to search, validate, and manage postal codes using detailed address input.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must allow users to search for a postal code by entering address details (state, city, street name)." },
+    { "code": "FR#2", "description": "The system must provide a list of matching results with their respective postal codes and addresses." },
+    { "code": "FR#3", "description": "The system must allow users to select a specific postal code from the search results." },
+    { "code": "FR#4", "description": "The system must allow users to edit or correct the address details if no results are found or if they entered incorrect data." },
+    { "code": "FR#5", "description": "The system must prevent submission of incomplete or incorrect data." },
+    { "code": "FR#6", "description": "The system must display detailed address information to complete the selected postal code." },
+    { "code": "FR#7", "description": "The system must provide an option to skip entering a postal code." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Search for postal codes using address details.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to input address details (state, city, and street name) to search for a postal code.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design the UI to allow users to input state, city, and street name." },
+            { "code": "E#1 US#1 T#2", "description": "Implement field validations to ensure all mandatory fields are filled correctly." },
+            { "code": "E#1 US#1 T#3", "description": "Create an API endpoint to fetch postal code results based on input details." }
+          ]
+        },
+        {
+          "code": "E#1 US#2",
+          "description": "As a user, I want the system to notify me if the input fields are incomplete or invalid before performing the search.",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Display and select postal codes from search results.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to view a list of results with matching postal codes and addresses after a search.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Design a UI to display search results in a list with postal code and address information." },
+            { "code": "E#2 US#1 T#2", "description": "Implement a clickable button or link for each result to allow selection of a postal code." },
+            { "code": "E#2 US#1 T#3", "description": "Add logic to dynamically update the search results as users modify input details." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As a user, I want to select a specific postal code from the search results.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Implement functionality to store the selected postal code and proceed to the next step." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Edit and validate address input details.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want to modify my input details if the system finds no results or if I realize I made a mistake.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Add an 'Edit' button to allow users to return to the input form and modify address details." },
+            { "code": "E#3 US#1 T#2", "description": "Ensure input validations are reapplied when modified data is submitted." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Complete address details for the selected postal code.",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As a user, I want to enter additional details to ensure delivery accuracy.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Design a UI to capture additional address details, including optional fields such as neighborhood and complement." },
+            { "code": "E#4 US#1 T#2", "description": "Validate these additional fields for consistency and correctness." }
+          ]
+        },
+        {
+          "code": "E#4 US#2",
+          "description": "As a user, I want an option to skip entering the postal code for unlisted or incomplete addresses.",
+          "tasks": [
+            { "code": "E#4 US#2 T#1", "description": "Add a 'Skip' button that allows users to proceed without entering a postal code." }
+          ]
+        }
+      ]
+    }
+  ]
+}
