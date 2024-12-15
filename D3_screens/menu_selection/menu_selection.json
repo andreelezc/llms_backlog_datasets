@@ -1,0 +1,81 @@
+{
+  "functionality": {
+    "name": "Menu Selection",
+    "description": "A feature for users to select their preferred meals for the week, view contextual weather data, and save their choices.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must allow users to select their preferred meals for each day of the week, grouped by categories." },
+    { "code": "FR#2", "description": "The system must display meal descriptions for each option." },
+    { "code": "FR#3", "description": "The system must support dropdown menus for meal selection with all available options." },
+    { "code": "FR#4", "description": "The system must save the selected menu for the week, showing a confirmation message when successfully stored." },
+    { "code": "FR#5", "description": "The system must display weather information for each day." },
+    { "code": "FR#6", "description": "The system must restrict menu editing for past dates." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Display meal options grouped by categories for each day of the week.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to see a list of meal options, including descriptions, to choose my weekly menu.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design the UI to display categorized meal options with descriptions." },
+            { "code": "E#1 US#1 T#2", "description": "Create a database schema to store meal options and categories." },
+            { "code": "E#1 US#1 T#3", "description": "Implement an API to fetch meal options and populate the UI." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Allow users to make and modify their meal selections for the week.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to select meals for each day.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Design dropdown menus for meal selection for each day." },
+            { "code": "E#2 US#1 T#2", "description": "Populate dropdown options dynamically from the backend." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As a user, I want to mark days when I will be absent so no meal is planned for those days.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Add an 'Absent' option to all dropdown menus and handle related backend logic." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Provide feedback and confirmation after saving menu selections.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want to receive a confirmation message after saving my menu to ensure my choices are stored.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Design a confirmation popup for saving the weekly menu." },
+            { "code": "E#3 US#1 T#2", "description": "Implement backend functionality to store meal choices in the database." },
+            { "code": "E#3 US#1 T#3", "description": "Add error handling." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Integrate contextual weather data for each day.",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As a user, I want to see the weather forecast for each day to decide on my meal preferences.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Integrate weather data API to fetch daily forecasts." }
+          ]
+        }
+      ]
+    }
+  ]
+}
