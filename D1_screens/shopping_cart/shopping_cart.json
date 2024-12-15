@@ -2,7 +2,10 @@
   "functionality": {
     "name": "Shopping Cart",
     "description": "A feature to manage shopping cart items, calculate costs, and facilitate the checkout process.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/product_display_quotation_management/d1_mockup_022.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/product_display_quotation_management/d1_mockup_023.png?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must display the products in the cart with their names, prices, quantities, and total cost per product." },
