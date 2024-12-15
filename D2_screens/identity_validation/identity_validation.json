@@ -1,0 +1,85 @@
+{
+  "functionality": {
+    "name": "Identity Validation",
+    "description": "A feature that guides users through identity verification, validates documents, and provides feedback and notifications.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must guide users through the process of verifying their identity." },
+    { "code": "FR#2", "description": "The system must validate the submitted documents and notify users of the status." },
+    { "code": "FR#3", "description": "The system must allow users to retry the verification process if the previous attempt was unsuccessful." },
+    { "code": "FR#4", "description": "The system must provide clear visual instructions like avoiding glare and using proper alignment." },
+    { "code": "FR#5", "description": "The system must display specific error messages explaining why the verification failed." },
+    { "code": "FR#6", "description": "The system must send an email or in-app notification when the verification process is completed." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Guide users through identity verification.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to receive step-by-step guidance on how to complete my identity verification.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design a step-by-step user interface for submitting ID documents, including front and back images." },
+            { "code": "E#1 US#1 T#2", "description": "Implement functionality for users to upload ID document photos with file format and size restrictions." }
+          ]
+        },
+        {
+          "code": "E#1 US#2",
+          "description": "As a user, I want to see examples of correctly captured documents to ensure I follow the guidelines.",
+          "tasks": [
+            { "code": "E#1 US#2 T#1", "description": "Create an example section showcasing properly captured ID photos (e.g., avoiding glare)." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Display verification statuses and outcomes.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to know the current status of my verification process.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Design a status tracker UI to display the verification process (e.g., pending, rejected, approved)." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As a user, I want to know the specific reasons why my verification was rejected.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Implement error message logic to display specific reasons for rejection." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Allow users to resubmit documents after a failed verification attempt.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want the option to retry the verification process after a failure without needing to restart the entire workflow.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Create a retry flow allowing users to resubmit documents without restarting." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Notify users of verification results through various channels (email or in-app).",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As a user, I want to receive notifications about the completion of my verification.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Set up backend logic to send email notifications upon verification status changes." },
+            { "code": "E#4 US#1 T#2", "description": "Implement in-app notifications to inform users about the verification outcome." }
+          ]
+        }
+      ]
+    }
+  ]
+}
