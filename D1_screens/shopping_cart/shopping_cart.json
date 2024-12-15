@@ -1,0 +1,114 @@
+{
+  "functionality": {
+    "name": "Shopping Cart",
+    "description": "A feature to manage shopping cart items, calculate costs, and facilitate the checkout process.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must display the products in the cart with their names, prices, quantities, and total cost per product." },
+    { "code": "FR#2", "description": "The system must allow users to increase or decrease the quantity of each product." },
+    { "code": "FR#3", "description": "The system must automatically recalculate the total product cost when the quantity is updated." },
+    { "code": "FR#4", "description": "The system must display the shipping cost for each product separately." },
+    { "code": "FR#5", "description": "The system must provide a 'Remove' option for each product." },
+    { "code": "FR#6", "description": "The system must inform the user if an item in the cart is no longer available for purchase (e.g., 'paused' status)." },
+    { "code": "FR#7", "description": "The system must allow users to proceed to checkout, showing a total that includes product and shipping costs." },
+    { "code": "FR#8", "description": "The system must display the products added to the cart with the product name, quantity, availability, and price." },
+    { "code": "FR#9", "description": "The system must allow the user to modify the quantity of products directly from the cart interface." },
+    { "code": "FR#10", "description": "The system must calculate the total price of the products in the cart and display it, including any discounts." },
+    { "code": "FR#11", "description": "The system must provide options to remove items, save items for later, and proceed to checkout." },
+    { "code": "FR#12", "description": "The system must allow the user to choose the shipping destination and display the corresponding shipping costs." },
+    { "code": "FR#13", "description": "The system must display the total amount to be paid, combining product and shipping costs, and offer a button for the next step of the purchase process." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Manage products in the shopping cart, including viewing, modifying, and removing items.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to view the products in my cart with names, prices, quantities, and total cost per product.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design and implement the interface to show cart items." },
+            { "code": "E#1 US#1 T#2", "description": "Create logic to calculate and display the total cost per product." }
+          ]
+        },
+        {
+          "code": "E#1 US#2",
+          "description": "As a user, I want to increase or decrease the quantity of products in my cart.",
+          "tasks": [
+            { "code": "E#1 US#2 T#1", "description": "Implement buttons to increase or decrease product quantities." },
+            { "code": "E#1 US#2 T#2", "description": "Create logic to automatically update the product cost when quantity changes." }
+          ]
+        },
+        {
+          "code": "E#1 US#3",
+          "description": "As a user, I want to remove products from my cart.",
+          "tasks": [
+            { "code": "E#1 US#3 T#1", "description": "Create a button to remove products from the cart." },
+            { "code": "E#1 US#3 T#2", "description": "Implement logic to recalculate the total cart value after removing a product." }
+          ]
+        },
+        {
+          "code": "E#1 US#4",
+          "description": "As a user, I want to be notified if a product in my cart is no longer available.",
+          "tasks": [
+            { "code": "E#1 US#4 T#1", "description": "Implement logic to verify if products are available." },
+            { "code": "E#1 US#4 T#2", "description": "Show notifications for products that are no longer available." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Allow users to view and manage shipping costs associated with their products.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to see the shipping cost for each product separately.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Implement components to show shipping costs for each product." },
+            { "code": "E#2 US#1 T#2", "description": "Create logic to retrieve and display shipping costs." }
+          ]
+        },
+        {
+          "code": "E#2 US#2",
+          "description": "As a user, I want to select the shipping destination to calculate the corresponding shipping costs.",
+          "tasks": [
+            { "code": "E#2 US#2 T#1", "description": "Create a UI to select the shipping destination." },
+            { "code": "E#2 US#2 T#2", "description": "Implement logic to calculate and display costs based on the selected destination." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Facilitate the checkout process by displaying a summary of the total cost and providing options for finalizing the purchase.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want to see the total cart amount, including product and shipping costs.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Create a summary section displaying the total amount with a breakdown." },
+            { "code": "E#3 US#1 T#2", "description": "Implement logic to include applicable discounts in the total." }
+          ]
+        },
+        {
+          "code": "E#3 US#2",
+          "description": "As a user, I want to save products in my cart for later purchase.",
+          "tasks": [
+            { "code": "E#3 US#2 T#1", "description": "Create an option to save products for later." },
+            { "code": "E#3 US#2 T#2", "description": "Develop logic to manage and display saved products." }
+          ]
+        },
+        {
+          "code": "E#3 US#3",
+          "description": "As a user, I want to proceed to the payment process from the cart.",
+          "tasks": [
+            { "code": "E#3 US#3 T#1", "description": "Create a button to initiate the checkout process." },
+            { "code": "E#3 US#3 T#2", "description": "Develop logic to transition from the cart to the payment interface." }
+          ]
+        }
+      ]
+    }
+  ]
+}
