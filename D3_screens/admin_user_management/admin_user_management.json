@@ -2,7 +2,17 @@
   "functionality": {
     "name": "Admin User Management",
     "description": "A feature for administrators to manage user accounts",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_017.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_018.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_019.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_020.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_021.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_022.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_023.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_024.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_user_management/d3_mockup_025.png?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow administrators to add new users with required fields (email, name, role, and company)." },
