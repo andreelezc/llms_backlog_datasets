@@ -2,7 +2,13 @@
   "functionality": {
     "name": "Postal Code",
     "description": "A feature to search, validate, and manage postal codes using detailed address input.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/postal_code/d2_mockup_039.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/postal_code/d2_mockup_040.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/postal_code/d2_mockup_041.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/postal_code/d2_mockup_042.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/postal_code/d2_mockup_043.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow users to search for a postal code by entering address details (state, city, street name)." },
