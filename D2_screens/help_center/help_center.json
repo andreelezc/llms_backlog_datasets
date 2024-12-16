@@ -2,7 +2,17 @@
   "functionality": {
     "name": "Help Center",
     "description": "A feature to provide users with categorized help resources, feedback options, and contact support.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_007.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_008.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_009.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_010.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_011.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_012.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_013.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_014.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/help_center/d2_mockup_015.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must let users search for help topics by typing keywords in a search bar." },
