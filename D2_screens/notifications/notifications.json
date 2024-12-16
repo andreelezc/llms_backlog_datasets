@@ -2,7 +2,12 @@
   "functionality": {
     "name": "Notifications",
     "description": "A feature to display, manage, and configure notifications with user-specific preferences.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/notifications/d2_mockup_035.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/notifications/d2_mockup_036.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/notifications/d2_mockup_037.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/notifications/d2_mockup_038.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must let users check their notifications, including detailed information such as sender, transaction type, and associated actions." },
