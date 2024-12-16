@@ -2,7 +2,14 @@
   "functionality": {
     "name": "Address Management",
     "description": "Features allowing users to manage addresses and company-related details.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/address_management/d2_mockup_001.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/address_management/d2_mockup_002.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/address_management/d2_mockup_003.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/address_management/d2_mockup_004.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/address_management/d2_mockup_005.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/address_management/d2_mockup_006.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must let users add a new address with basic details like name, state, city, street, etc. There should also be optional fields for additional info like apartment number or notes." },
