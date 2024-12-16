@@ -2,7 +2,12 @@
   "functionality": {
     "name": "Login",
     "description": "A feature for users to log in and out of their accounts.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/login/d3_mockup_026.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/login/d3_mockup_027.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/login/d3_mockup_028.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/login/d3_mockup_029.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow users to input their email and password to log in." },
