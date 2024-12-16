@@ -2,7 +2,19 @@
   "functionality": {
     "name": "Identity Validation",
     "description": "A feature that guides users through identity verification, validates documents, and provides feedback and notifications.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_016.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_017.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_018.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_019.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_020.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_021.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_022.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_023.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_024.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_025.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/identity_validation/d2_mockup_026.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must guide users through the process of verifying their identity." },
