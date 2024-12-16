@@ -2,7 +2,10 @@
   "functionality": {
     "name": "Terms & Conditions",
     "description": "A feature to display Terms and Conditions and ensure user acknowledgment before proceeding.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/terms_and_conditions/d2_mockup_044.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/terms_and_conditions/d2_mockup_045.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must display Terms and Conditions for users to review." },
