@@ -2,7 +2,14 @@
   "functionality": {
     "name": "Admin New Menu",
     "description": "A feature for administrators to create and manage weekly menus, customize meals and mark holidays.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_new_menu/d3_mockup_011.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_new_menu/d3_mockup_012.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_new_menu/d3_mockup_013.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_new_menu/d3_mockup_014.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_new_menu/d3_mockup_015.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_new_menu/d3_mockup_016.png?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow administrators to create a new menu for a selected week." },
