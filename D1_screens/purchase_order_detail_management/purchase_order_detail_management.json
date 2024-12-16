@@ -3,10 +3,10 @@
     "name": "Purchase Order Detail Management",
     "description": "A feature to manage purchase order details, including receipt confirmation, seller rating, and product reviews.",
     "mockups": [
-    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/product_display_quotation_management/d1_mockup_018.png?raw=true",
-    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/product_display_quotation_management/d1_mockup_019.png?raw=true",
-    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/product_display_quotation_management/d1_mockup_020.png?raw=true",
-    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/product_display_quotation_management/d1_mockup_021.png?raw=true"
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/purchase_order_detail_management/d1_mockup_018.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/purchase_order_detail_management/d1_mockup_019.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/purchase_order_detail_management/d1_mockup_020.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/purchase_order_detail_management/d1_mockup_021.png?raw=true"
   ]
   },
   "requirements": [
