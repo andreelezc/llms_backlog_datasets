@@ -2,7 +2,12 @@
   "functionality": {
     "name": "Admin Menu Management",
     "description": "A feature to manage weekly menus for users, view summaries, export data, and customize menu views.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_menu_management/d3_mockup_007.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_menu_management/d3_mockup_008.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_menu_management/d3_mockup_009.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_menu_management/d3_mockup_010.png?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow administrators to view and edit the weekly menu for each user, including the type of dish assigned for each day." },
