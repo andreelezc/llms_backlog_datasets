@@ -2,7 +2,16 @@
   "functionality": {
     "name": "Login & Registration",
     "description": "Features to allow users to register, log in, and recover accounts with data validation and verification notifications.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_027.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_028.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_029.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_030.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_031.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_032.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_033.jpg?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D2_screens/login_registration/d2_mockup_034.jpg?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow users to create an account as an individual or a company by providing personal or business information." },
