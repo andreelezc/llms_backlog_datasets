@@ -2,7 +2,14 @@
   "functionality": {
     "name": "Admin Login",
     "description": "Login feature for administrators, with password reset capabilities and restricted access for unauthorized users.",
-    "mockups": []
+    "mockups": [
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_login/d3_mockup_001.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_login/d3_mockup_002.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_login/d3_mockup_003.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_login/d3_mockup_004.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_login/d3_mockup_005.png?raw=true",
+    "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D3_screens/admin_login/d3_mockup_006.png?raw=true"
+  ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must restrict access to non-administrative users and display a notification for denied access attempts." },
