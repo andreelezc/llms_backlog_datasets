@@ -2,7 +2,19 @@
   "functionality": {
     "name": "Account Creation",
     "description": "A feature for users to create accounts with validation, multi-channel verification, differentiated onboarding flows, and security options.",
-    "mockups": []
+    "mockups": [
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_059.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_060.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_062.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_063.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_064.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_065.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_066.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_067.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_068.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_069.png?raw=true",
+      "https://github.com/andreelezc/llms_backlog_datasets/blob/main/D1_screens/account_creation/mockup_071.png?raw=true"
+    ]
   },
   "requirements": [
     { "code": "FR#1", "description": "The system must allow users to create an account by providing personal details." },
@@ -90,7 +102,7 @@
           "description": "As a user, I want to confirm my consent to the terms and conditions before completing the account creation.",
           "tasks": [
             { "code": "E#4 US#2 T#1", "description": "Design and display checkboxes for user consent agreements." },
-            { "code": "E#4 US#2 T#2", "description": "Store user consent information securely in the database." }
+            { "code": "E#4 US#2 T#2", "description": "Store user consent information in the database." }
           ]
         }
       ]
