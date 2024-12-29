@@ -1,0 +1,84 @@
+{
+  "functionality": {
+    "name": "Question and Answer Management",
+    "description": "A feature that allows users to view, manage, and interact with their questions and answers.",
+    "mockups": []
+  },
+  "requirements": [
+    { "code": "FR#1", "description": "The system must allow users to view a list of their answered and unanswered questions, categorized accordingly." },
+    { "code": "FR#2", "description": "The system must provide filters for sorting questions by date and type (e.g., recent answers, recent questions)." },
+    { "code": "FR#3", "description": "The system must allow users to delete specific questions or answers from their list." },
+    { "code": "FR#4", "description": "The system must enable users to compose and send new questions to sellers." },
+    { "code": "FR#5", "description": "The system must display visual indicators for unanswered questions or actions required." },
+    { "code": "FR#6", "description": "The system must allow users to view detailed responses from sellers, including timestamps." }
+  ],
+  "epics": [
+    {
+      "code": "E#1",
+      "description": "Display and manage categorized questions and answers.",
+      "user_stories": [
+        {
+          "code": "E#1 US#1",
+          "description": "As a user, I want to see a categorized list of my answered and unanswered questions.",
+          "tasks": [
+            { "code": "E#1 US#1 T#1", "description": "Design the UI to categorize and display answered and unanswered questions." },
+            { "code": "E#1 US#1 T#2", "description": "Create API endpoints to fetch categorized questions and answers from the backend." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#2",
+      "description": "Enable question composition and sending functionalities.",
+      "user_stories": [
+        {
+          "code": "E#2 US#1",
+          "description": "As a user, I want to compose and send a new question to a seller to request additional information about a product.",
+          "tasks": [
+            { "code": "E#2 US#1 T#1", "description": "Implement backend functionality for sending user questions to sellers." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#3",
+      "description": "Implement sorting and filtering options for user convenience.",
+      "user_stories": [
+        {
+          "code": "E#3 US#1",
+          "description": "As a user, I want to sort my questions and answers by date and type.",
+          "tasks": [
+            { "code": "E#3 US#1 T#1", "description": "Implement the backend logic to support question filtering by date and type." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#4",
+      "description": "Provide deletion capabilities for user questions and answers.",
+      "user_stories": [
+        {
+          "code": "E#4 US#1",
+          "description": "As a user, I want to delete old questions or answers.",
+          "tasks": [
+            { "code": "E#4 US#1 T#1", "description": "Implement backend functionality to delete user questions or answers." }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E#5",
+      "description": "Display visual indicators for unanswered or pending questions.",
+      "user_stories": [
+        {
+          "code": "E#5 US#1",
+          "description": "As a user, I want to see visual indicators for unanswered questions so I can prioritize follow-ups.",
+          "tasks": [
+            { "code": "E#5 US#1 T#1", "description": "Add visual indicators for unanswered questions." },
+            { "code": "E#5 US#1 T#2", "description": "Integrate backend checks to identify unanswered questions." }
+          ]
+        }
+      ]
+    }
+  ]
+}
